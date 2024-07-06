@@ -6,7 +6,7 @@
 /*   By: lteng <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 23:41:07 by lteng             #+#    #+#             */
-/*   Updated: 2024/07/06 15:37:33 by lteng            ###   ########.fr       */
+/*   Updated: 2024/07/06 15:51:15 by lteng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@ void	ft_sleep(t_philo *philo)
 void	ft_think(t_philo *philo)
 {
 	print_status(time_in_ms(), philo, THINKING);
-	if (philo->table->philo_nbr % 2 == 1)
+	if (philo->table->philo_nbr % 2 == 0)
 		return ;
-	else if (philo->table->philo_nbr % 2 == 0)
+	else if (philo->table->philo_nbr % 2 == 1)
 		force_sleep(1);
 }
 
