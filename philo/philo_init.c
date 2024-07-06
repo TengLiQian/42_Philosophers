@@ -6,7 +6,7 @@
 /*   By: lteng <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 00:06:58 by lteng             #+#    #+#             */
-/*   Updated: 2024/06/23 12:14:40 by lteng            ###   ########.fr       */
+/*   Updated: 2024/07/06 14:26:47 by lteng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ Parameters:
 int	input_init(t_table *table, char *argv[])
 {
 	table->philo_nbr = ft_atol(argv[1]);
-	if (table->philo_nbr > 200)
+	if (table->philo_nbr > 200 || table->philo_nbr <= 0)
 	{
-		error_msg(BR "Limit set to 200 Philosophers" RST);
+		error_msg(BR "Please enter a Philo no. between 1 to 200" RST);
 		return (-1);
 	}
 	table->time_to_die = ft_atol(argv[2]);
