@@ -6,7 +6,7 @@
 #    By: lteng <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/01 13:33:21 by lteng             #+#    #+#              #
-#    Updated: 2024/06/29 13:29:28 by lteng            ###   ########.fr        #
+#    Updated: 2024/07/06 14:47:53 by lteng            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ SRCS = main.c philo_utils.c philo_utils2.c philo_init.c philo_dinner.c \
 
 OBJS = $(SRCS:.c=.o)
 CC = cc -g
-CFLAGS = -Wall -Werror -Wextra 
+CFLAGS = -Wall -Werror -Wextra
 NAME = philo
 RM = rm -rf
 all: $(NAME)
