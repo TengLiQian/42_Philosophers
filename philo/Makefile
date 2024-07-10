@@ -6,12 +6,12 @@
 #    By: lteng <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/01 13:33:21 by lteng             #+#    #+#              #
-#    Updated: 2024/07/06 14:47:53 by lteng            ###   ########.fr        #
+#    Updated: 2024/07/10 21:19:50 by lteng            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = main.c philo_utils.c philo_utils2.c philo_init.c philo_dinner.c \
-	philo_threads.c philo.monitor.c
+	philo_threads.c philo_monitor.c
 
 OBJS = $(SRCS:.c=.o)
 CC = cc -g
